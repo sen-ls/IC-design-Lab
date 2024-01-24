@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dcf_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="dcf_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="52503902964fs"></ZoomEndTime>
+      <Cursor1Time time="2533681000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="111"></NameColumnWidth>
+      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject type="logic" fp_name="/dcf_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/dcf_tb/en_100">
+      <obj_property name="ElementShortName">en_100</obj_property>
+      <obj_property name="ObjectShortName">en_100</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/dcf_tb/en_10">
+      <obj_property name="ElementShortName">en_10</obj_property>
+      <obj_property name="ObjectShortName">en_10</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/dcf_tb/en_1">
+      <obj_property name="ElementShortName">en_1</obj_property>
+      <obj_property name="ObjectShortName">en_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/dcf_tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/dcf_tb/dcf">
+      <obj_property name="ElementShortName">dcf</obj_property>
+      <obj_property name="ObjectShortName">dcf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/dcf_tb/de_set">
+      <obj_property name="ElementShortName">de_set</obj_property>
+      <obj_property name="ObjectShortName">de_set</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/dcf_tb/de_dow">
+      <obj_property name="ElementShortName">de_dow[2:0]</obj_property>
+      <obj_property name="ObjectShortName">de_dow[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/dcf_tb/de_day">
+      <obj_property name="ElementShortName">de_day[5:0]</obj_property>
+      <obj_property name="ObjectShortName">de_day[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/dcf_tb/de_month">
+      <obj_property name="ElementShortName">de_month[4:0]</obj_property>
+      <obj_property name="ObjectShortName">de_month[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/dcf_tb/de_year">
+      <obj_property name="ElementShortName">de_year[7:0]</obj_property>
+      <obj_property name="ObjectShortName">de_year[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/dcf_tb/de_hour">
+      <obj_property name="ElementShortName">de_hour[5:0]</obj_property>
+      <obj_property name="ObjectShortName">de_hour[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/dcf_tb/de_min">
+      <obj_property name="ElementShortName">de_min[6:0]</obj_property>
+      <obj_property name="ObjectShortName">de_min[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/dcf_tb/T">
+      <obj_property name="ElementShortName">T</obj_property>
+      <obj_property name="ObjectShortName">T</obj_property>
+   </wvobject>
+</wave_config>

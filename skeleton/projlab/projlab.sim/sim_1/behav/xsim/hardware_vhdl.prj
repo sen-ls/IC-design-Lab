@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl MFclock  \
+"../../../../../clock_gen.vhd" \
+"../../../../../clock_module.vhd" \
+"../../../../../dcf_decode.vhd" \
+"../../../../../dcf_gen.vhd" \
+"../../../../../debounce.vhd" \
+"../../../../../key_control.vhd" \
+"../../../../../top.vhd" \
+"../../../../../hardware.vhd" \
+
+# Do not sort compile order
+nosort

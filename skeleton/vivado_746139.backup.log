@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jul 28 15:42:14 2023
+# Process ID: 746139
+# Current directory: /nas/ei/home/ge34gak/iclab/skeleton
+# Command line: vivado
+# Log file: /nas/ei/home/ge34gak/iclab/skeleton/vivado.log
+# Journal file: /nas/ei/home/ge34gak/iclab/skeleton/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/tools/xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 6486.488 ; gain = 148.164 ; free physical = 889 ; free virtual = 6876
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 28 15:43:22 2023...

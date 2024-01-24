@@ -1,0 +1,1 @@
+-wto "1b91929911e948f7b5b2ab779e43abb2" --incr --debug "typical" --relax --mt "8" -L "MFclock" -L "secureip" --snapshot "sync_tb_behav" "MFclock.sync_tb" -log "elaborate.log" 

@@ -1,0 +1,222 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Fri Jul 28 16:40:21 2023
+| Host         : prakt10 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_control_sets -verbose -file hardware_control_sets_placed.rpt
+| Design       : hardware
+| Device       : xc7z020
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   144 |
+|    Minimum number of control sets                        |   144 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   891 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   144 |
+| >= 0 to < 4        |   115 |
+| >= 4 to < 6        |    12 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             113 |           49 |
+| No           | No                    | Yes                    |             264 |          125 |
+| No           | Yes                   | No                     |             104 |           54 |
+| Yes          | No                    | No                     |              51 |           17 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             145 |           46 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------+---------------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|                      Clock Signal                     |                            Enable Signal                            |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++-------------------------------------------------------+---------------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_8                |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/reset_reg_16               |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/reset_reg_17               |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/reset_reg_18               |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/reset_reg_19               |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/reset_reg_20               |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     |                                                             |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_6                |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_7                |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/reset_reg_15               |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_9                |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[0]_0         |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[1]_0         |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[2]_0         |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[3]_0         |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[4]_0         |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[5]_0         |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_10               |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[3]_0          |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_23               |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_24               |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_25               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/year_temp_reg[6]_0  |                                                                     | top/clock_module/dcf_interpreter/reset_reg_29               |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[0]_0          |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[1]_0          |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[2]_0          |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[5]_0          |                1 |              1 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_11               |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[4]_0          |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/dcf_dow_reg[0]_0           |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/dcf_dow_reg[1]_0           |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/dcf_dow_reg[2]_0           |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/reset_reg_12               |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/reset_reg_13               |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/dcf_interpreter/reset_reg_14               |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[6]_0          |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_4                |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_5                |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[0]_0          |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[1]_0          |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[2]_0          |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[3]_0          |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[4]_0          |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[5]_0          |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     |                                                             |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg                  |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_0                |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_1                |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_2                |                1 |              1 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_3                |                1 |              1 |
+|  en_1_BUFG                                            |                                                                     |                                                             |                1 |              1 |
+|  reset_BUFG                                           |                                                                     | top/clock_module/synchronize/FSM_SYN_reg_0                  |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[4]_0         |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[6]_0         |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[7]_0         |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/reset_reg_32               |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/reset_reg_33               |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[0]_0         |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[1]_0         |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[2]_0         |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[3]_0         |                1 |              1 |
+|  clock_module/time_date/hour_1                        |                                                                     |                                                             |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[5]_0         |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/reset_reg_26               |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/reset_reg_27               |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/reset_reg_28               |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/reset_reg_29               |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/reset_reg_30               |                1 |              1 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/dcf_interpreter/reset_reg_31               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_17        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[2]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/month_temp_reg[4]_0 |                                                                     | top/clock_module/dcf_interpreter/reset_reg_23               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg           |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[5]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_0         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[4]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_1         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[3]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_12        |                                                                     | top/clock_module/dcf_interpreter/dcf_dow_reg[1]_0           |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_13        |                                                                     | top/clock_module/dcf_interpreter/dcf_dow_reg[0]_0           |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_15        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[4]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_16        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[3]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/month_temp_reg[1]_0 |                                                                     | top/clock_module/dcf_interpreter/reset_reg_24               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_18        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[1]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_19        |                                                                     | top/clock_module/dcf_interpreter/day_temp_reg[0]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_2         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[1]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_21        |                                                                     | top/clock_module/dcf_interpreter/month_temp_reg[3]_0        |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_22        |                                                                     | top/clock_module/dcf_interpreter/month_temp_reg[2]_0        |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_26        |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[3]_0         |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_27        |                                                                     | top/clock_module/dcf_interpreter/year_temp_reg[2]_0         |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_3         |                                                                     | top/clock_module/dcf_interpreter/min_temp_reg[0]_0          |                1 |              1 |
+|  top/clock_module/dcf_interpreter/year_temp_reg[5]_0  |                                                                     | top/clock_module/dcf_interpreter/reset_reg_30               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/year_temp_reg[7]_0  |                                                                     | top/clock_module/dcf_interpreter/reset_reg_28               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_6         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[4]_0         |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_7         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[2]_0         |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_8         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[1]_0         |                1 |              1 |
+|  top/clock_module/dcf_interpreter/reset_reg_9         |                                                                     | top/clock_module/dcf_interpreter/hour_temp_reg[0]_0         |                1 |              1 |
+|  top/clock_module/dcf_interpreter/year_temp_reg[0]_0  |                                                                     | top/clock_module/dcf_interpreter/reset_reg_33               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/year_temp_reg[1]_0  |                                                                     | top/clock_module/dcf_interpreter/reset_reg_32               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/year_temp_reg[4]_0  |                                                                     | top/clock_module/dcf_interpreter/reset_reg_31               |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_21               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/day_temp_reg[5]_0   |                                                                     | top/clock_module/dcf_interpreter/reset_reg_20               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/dcf_dow_reg[2]_0    |                                                                     | top/clock_module/dcf_interpreter/reset_reg_14               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/hour_temp_reg[3]_0  |                                                                     | top/clock_module/dcf_interpreter/reset_reg_11               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/hour_temp_reg[5]_0  |                                                                     | top/clock_module/dcf_interpreter/reset_reg_10               |                1 |              1 |
+|  top/clock_module/dcf_interpreter/min_temp_reg[2]_0   |                                                                     | top/clock_module/dcf_interpreter/reset_reg_5                |                1 |              1 |
+|  top/clock_module/dcf_interpreter/min_temp_reg[6]_0   |                                                                     | top/clock_module/dcf_interpreter/reset_reg_4                |                1 |              1 |
+|  top/clock_module/dcf_interpreter/month_temp_reg[0]_0 |                                                                     | top/clock_module/dcf_interpreter/reset_reg_25               |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     |                                                             |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/reset_reg_22               |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/month_temp_reg[0]_0        |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/month_temp_reg[1]_0        |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/month_temp_reg[2]_0        |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/month_temp_reg[3]_0        |                1 |              1 |
+|  LCD_E_OBUF_BUFG                                      | top/clock_module/display_controller/address[5]_i_1_n_0              | top/clock_module/display_controller/address[4]_i_1_n_0      |                1 |              1 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/dcf_interpreter/month_temp_reg[4]_0        |                1 |              1 |
+|  LCD_E_OBUF_BUFG                                      | top/clock_module/display_controller/lcd_rs_i_1_n_0                  | reset_BUFG                                                  |                1 |              1 |
+|  GCLK_IBUF_BUFG                                       |                                                                     |                                                             |                2 |              2 |
+|  LCD_E_OBUF_BUFG                                      |                                                                     |                                                             |                2 |              3 |
+|  clk_BUFG                                             | sel                                                                 | BTND_IBUF                                                   |                1 |              4 |
+|  clk_BUFG                                             | clock_gen/E[0]                                                      | en_1_BUFG                                                   |                1 |              4 |
+|  clk_BUFG                                             | clock_gen/counter_1[3]_i_1_n_0                                      |                                                             |                1 |              4 |
+|  clk_BUFG                                             | clock_gen/counter_10[3]_i_1_n_0                                     |                                                             |                1 |              4 |
+|  clk_BUFG                                             | clock_gen/counter_100                                               |                                                             |                1 |              4 |
+|  clk_BUFG                                             | clock_gen/en_1_reg_0[0]                                             | reset_BUFG                                                  |                2 |              4 |
+|  clk_BUFG                                             |                                                                     | clock_gen/counter_100                                       |                1 |              4 |
+|  LCD_E_OBUF_BUFG                                      | top/clock_module/display_controller/address[5]_i_1_n_0              |                                                             |                2 |              4 |
+|  LCD_E_OBUF_BUFG                                      | top/clock_module/display_controller/FSM_sequential_state[3]_i_1_n_0 | reset_BUFG                                                  |                3 |              4 |
+|  en_1_BUFG                                            |                                                                     | reset_BUFG                                                  |                4 |              5 |
+|  clk_BUFG                                             |                                                                     | top/clock_module/td_dow[1]                                  |                2 |              5 |
+|  en_1_BUFG                                            |                                                                     | top/clock_module/synchronize/FSM_SYN_reg_0                  |                4 |              5 |
+|  clk_BUFG                                             | en_1_BUFG                                                           | reset_BUFG                                                  |                2 |              6 |
+|  clk_BUFG                                             | clock_gen/en_100_reg_0[0]                                           | top/dcf_decode/sample_count[6]_i_1_n_0                      |                3 |              7 |
+|  LCD_E_OBUF_BUFG                                      | top/clock_module/display_controller/lcd_data[7]_i_1_n_0             | reset_BUFG                                                  |                3 |              8 |
+|  GCLK_IBUF_BUFG                                       |                                                                     | clock_gen/i_clk_10K                                         |                3 |             12 |
+|  clk_BUFG                                             |                                                                     | reset_BUFG                                                  |                4 |             15 |
+|  clock_module/time_date/month_1                       |                                                                     | top/clock_module/sec[31]_i_2_n_0                            |                6 |             24 |
+|  clock_module/time_date/sec_1                         |                                                                     | top/clock_module/sec[31]_i_2_n_0                            |                6 |             25 |
+|  clock_module/time_date/min_1                         |                                                                     | top/clock_module/sec[31]_i_2_n_0                            |                6 |             26 |
+|  clock_module/time_date/day_1                         |                                                                     | top/clock_module/sec[31]_i_2_n_0                            |                9 |             27 |
+|  en_1_BUFG                                            |                                                                     | top/clock_module/sec[31]_i_2_n_0                            |                7 |             27 |
+|  clk_BUFG                                             |                                                                     | top/clock_module/display_controller/clk_count[0]__0_i_1_n_0 |                8 |             32 |
+|  LCD_E_OBUF_BUFG                                      | top/clock_module/display_controller/clk_count                       | reset_BUFG                                                  |                8 |             32 |
+|  LCD_E_OBUF_BUFG                                      | top/clock_module/display_controller/count[31]_i_2_n_0               | top/clock_module/display_controller/count[31]_i_1_n_0       |                9 |             32 |
+|  clk_BUFG                                             | top/dcf_decode/E[0]                                                 |                                                             |               12 |             35 |
+|  clk_BUFG                                             | top/dcf_decode/stream12_out                                         | reset_BUFG                                                  |               12 |             42 |
+|  clock_module/time_date/hour_1                        |                                                                     | top/clock_module/sec[31]_i_2_n_0                            |               13 |             55 |
+|  clk_BUFG                                             |                                                                     |                                                             |               40 |            103 |
++-------------------------------------------------------+---------------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,136 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 416332
+License: Customer
+
+Current time: 	Thu Jul 27 09:41:35 CEST 2023
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Ubuntu
+OS Version: 5.4.0-155-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: :0.0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 6 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/nas/ei/share/tools/xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/nas/ei/share/tools/xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ge34gak
+User home directory: /nas/ei/home/ge34gak
+User working directory: /nas/ei/home/ge34gak/iclab/skeleton
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /nas/ei/share/tools/xilinx/Vivado
+HDI_APPROOT: /nfs/tools/xilinx/Vivado/2019.1
+RDI_DATADIR: /nas/ei/share/tools/xilinx/Vivado/2019.1/data
+RDI_BINDIR: /nas/ei/share/tools/xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/ge34gak/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/ge34gak/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /nas/ei/home/ge34gak/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/nas/ei/share/tools/xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/nas/ei/home/ge34gak/iclab/skeleton/vivado.log
+Vivado journal file location: 	/nas/ei/home/ge34gak/iclab/skeleton/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-416332-prakt11
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /nfs/tools/xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /nfs/tools/xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /nfs/tools/xilinx/Vivado/2019.1
+XILINX_SDK: /nfs/tools/xilinx/SDK/2019.1
+XILINX_VIVADO: /nfs/tools/xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /nfs/tools/xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 948 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 928 MB. GUI used memory: 49 MB. Current time: 7/27/23, 9:41:37 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.xpr", 0); // q (O, cl)
+// [GUI Memory]: 86 MB (+87676kb) [00:00:33]
+// [Engine Memory]: 946 MB (+840485kb) [00:00:33]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: /nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 107 MB (+17214kb) [00:00:37]
+// [Engine Memory]: 996 MB (+3316kb) [00:00:37]
+// [Engine Memory]: 1,055 MB (+9148kb) [00:00:38]
+// WARNING: HEventQueue.dispatchEvent() is taking  1399 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/tools/xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,089 MB. GUI used memory: 54 MB. Current time: 7/27/23, 9:42:08 AM CEST
+// Project name: projlab; location: /nas/ei/home/ge34gak/iclab/skeleton/projlab; part: xc7z020clg484-3
+dismissDialog("Open Project"); // by (cl)
+// [Engine Memory]: 1,157 MB (+51673kb) [00:00:41]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hardware(Behavioral) (hardware.vhd)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hardware(Behavioral) (hardware.vhd), top : top(Behavioral) (top.vhd)]", 4); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hardware(Behavioral) (hardware.vhd), top : top(Behavioral) (top.vhd), clock_module : clock_module(Behavioral) (clock_module.vhd)]", 7); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hardware(Behavioral) (hardware.vhd), top : top(Behavioral) (top.vhd), clock_module : clock_module(Behavioral) (clock_module.vhd), time_date : time_date(Behavioral) (time_date.vhd)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hardware(Behavioral) (hardware.vhd), top : top(Behavioral) (top.vhd), clock_module : clock_module(Behavioral) (clock_module.vhd), time_date : time_date(Behavioral) (time_date.vhd)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("time_date.vhd", 202, 188); // cl (w, cl)
+selectCodeEditor("time_date.vhd", 156, 314); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("time_date.vhd", 143, 249); // cl (w, cl)
+selectCodeEditor("time_date.vhd", 146, 246); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("time_date.vhd", 156, 340); // cl (w, cl)
+selectCodeEditor("time_date.vhd", 155, 341); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("time_date.vhd", 160, 253); // cl (w, cl)
+selectCodeEditor("time_date.vhd", 157, 294); // cl (w, cl)
+selectCodeEditor("time_date.vhd", 157, 367); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 114 MB (+2056kb) [00:02:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,187 MB. GUI used memory: 57 MB. Current time: 7/27/23, 9:43:42 AM CEST
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "time_date.vhd", 'c'); // cl (w, cl)

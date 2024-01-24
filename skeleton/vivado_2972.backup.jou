@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jul 28 15:45:18 2023
+# Process ID: 2972
+# Current directory: /nas/ei/home/ge34gak/iclab/skeleton
+# Command line: vivado
+# Log file: /nas/ei/home/ge34gak/iclab/skeleton/vivado.log
+# Journal file: /nas/ei/home/ge34gak/iclab/skeleton/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.xpr
+open_hw
+update_compile_order -fileset sources_1
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server

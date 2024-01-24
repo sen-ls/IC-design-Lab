@@ -1,0 +1,22 @@
+# compile vhdl design source files
+vhdl MFclock  \
+"../../../../../clock_module.vhd" \
+"../../../../../dcf_decode.vhd" \
+"../../../../../debounce.vhd" \
+"../../../../../key_control.vhd" \
+"../../../../../top.vhd" \
+"../../../../../clock_gen.vhd" \
+"../../../../../dcf_gen.vhd" \
+"../../../../../hardware.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../projlab.srcs/sources_1/new/syncronize.vhd" \
+"../../../../projlab.srcs/sources_1/new/display_decoder.vhd" \
+"../../../../projlab.srcs/sources_1/new/display_controller.vhd" \
+"../../../../projlab.srcs/sources_1/new/display_interpreter.vhd" \
+
+vhdl MFclock  \
+"../../../../projlab.srcs/sources_1/new/tb.vhd" \
+
+# Do not sort compile order
+nosort

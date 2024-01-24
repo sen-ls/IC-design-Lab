@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jul 28 15:49:47 2023
+# Process ID: 3425
+# Current directory: /nas/ei/home/ge34gak/iclab/skeleton
+# Command line: vivado
+# Log file: /nas/ei/home/ge34gak/iclab/skeleton/vivado.log
+# Journal file: /nas/ei/home/ge34gak/iclab/skeleton/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/tools/xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 6658.809 ; gain = 208.090 ; free physical = 25480 ; free virtual = 29164
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248571160
+set_property PROGRAM.FILE {/nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.runs/impl_1/hardware.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 28 15:50:51 2023] Launched synth_1...
+Run output will be captured here: /nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.runs/synth_1/runme.log
+[Fri Jul 28 15:50:51 2023] Launched impl_1...
+Run output will be captured here: /nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.runs/impl_1/hardware.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nas/ei/home/ge34gak/1/LabICDesign/skeleton/clock_module.vhd" into library MFclock
+INFO: [VRFC 10-3107] analyzing entity 'clock_module'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nas/ei/home/ge34gak/1/LabICDesign/skeleton/top.vhd" into library MFclock
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nas/ei/home/ge34gak/1/LabICDesign/skeleton/hardware.vhd" into library MFclock
+INFO: [VRFC 10-3107] analyzing entity 'hardware'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nas/ei/home/ge34gak/1/LabICDesign/skeleton/tb.vhd" into library MFclock
+INFO: [VRFC 10-3107] analyzing entity 'tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.sim/sim_1/behav/xsim'
+xelab -wto 1b91929911e948f7b5b2ab779e43abb2 --incr --debug typical --relax --mt 8 -L MFclock -L secureip --snapshot tb_behav MFclock.tb -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /nfs/tools/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 1b91929911e948f7b5b2ab779e43abb2 --incr --debug typical --relax --mt 8 -L MFclock -L secureip --snapshot tb_behav MFclock.tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity mfclock.clock_gen [clock_gen_default]
+Compiling architecture behavioral of entity mfclock.dcf_gen [dcf_gen_default]
+Compiling architecture behavioral of entity mfclock.debounce [debounce_default]
+Compiling architecture behavioral of entity mfclock.key_control [key_control_default]
+Compiling architecture behavioral of entity mfclock.dcf_decode [dcf_decode_default]
+Compiling architecture behavioral of entity mfclock.time_date [time_date_default]
+Compiling architecture behavioral of entity mfclock.synchronize [synchronize_default]
+Compiling architecture behavioral of entity mfclock.display_interpreter [display_interpreter_default]
+Compiling architecture controller of entity mfclock.display_controller [display_controller_default]
+Compiling architecture behavioral of entity mfclock.state_control [state_control_default]
+Compiling architecture behavioral of entity mfclock.clock_module [clock_module_default]
+Compiling architecture behavioral of entity mfclock.top [top_default]
+Compiling architecture behavioral of entity mfclock.hardware [hardware_default]
+Compiling architecture testbench of entity mfclock.tb
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/projlab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {/nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config /nas/ei/home/ge34gak/1/LabICDesign/skeleton/projlab/tb_behav.wcfg
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 25ms
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 25ms
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 7864.664 ; gain = 188.027 ; free physical = 21797 ; free virtual = 25746
+current_wave_config {tb_behav.wcfg}
+tb_behav.wcfg
+add_wave {{/tb/UUT/top/clock_module/time_date}} 
+run 800 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 7915.066 ; gain = 0.000 ; free physical = 22494 ; free virtual = 26431

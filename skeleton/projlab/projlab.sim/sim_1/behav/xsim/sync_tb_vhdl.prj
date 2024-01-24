@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl MFclock  \
+"../../../../projlab.srcs/sources_1/new/synchronize.vhd" \
+"../../../../projlab.srcs/sim_1/new/sync_tb.vhd" \
+
+# Do not sort compile order
+nosort

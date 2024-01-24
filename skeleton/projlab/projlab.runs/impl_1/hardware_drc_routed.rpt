@@ -1,0 +1,217 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Fri Jul 28 16:40:35 2023
+| Host         : prakt10 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_drc -file hardware_drc_routed.rpt -pb hardware_drc_routed.pb -rpx hardware_drc_routed.rpx
+| Design       : hardware
+| Device       : xc7z020clg484-3
+| Speed File   : -3
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 36
++----------+----------+--------------------+------------+
+| Rule     | Severity | Description        | Violations |
++----------+----------+--------------------+------------+
+| PDRC-153 | Warning  | Gated clock check  | 35         |
+| ZPS7-1   | Warning  | PS7 block required | 1          |
++----------+----------+--------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/day_temp_reg[5]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/day_reg[5]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/day_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/dcf_dow_reg[2]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/dow_reg[2]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/dow_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/hour_temp_reg[3]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/hour_reg[3]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/hour_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/hour_temp_reg[5]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/hour_reg[5]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/hour_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/min_temp_reg[2]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/min_reg[2]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/min_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/min_temp_reg[6]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/min_reg[6]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/min_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/month_temp_reg[0]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/month_reg[0]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/month_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/month_temp_reg[1]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/month_reg[1]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/month_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/month_temp_reg[4]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/month_reg[4]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/month_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/min_reg[5]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/min_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/min_reg[4]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/min_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_1 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/min_reg[3]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/min_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_12 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/dow_reg[1]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/dow_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_13 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/dow_reg[0]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/dow_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_15 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/day_reg[4]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/day_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_16 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/day_reg[3]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/day_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_17 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/day_reg[2]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/day_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_18 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/day_reg[1]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/day_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_19 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/day_reg[0]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/day_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_2 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/min_reg[1]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/min_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_21 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/month_reg[3]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/month_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_22 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/month_reg[2]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/month_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_26 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/year_reg[3]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/year_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_27 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/year_reg[2]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/year_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_3 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/min_reg[0]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/min_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_6 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/hour_reg[4]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/hour_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_7 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/hour_reg[2]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/hour_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_8 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/hour_reg[1]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/hour_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/reset_reg_9 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/hour_reg[0]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/hour_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/year_temp_reg[0]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/year_reg[0]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/year_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/year_temp_reg[1]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/year_reg[1]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/year_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/year_temp_reg[4]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/year_reg[4]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/year_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/year_temp_reg[5]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/year_reg[5]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/year_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/year_temp_reg[6]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/year_reg[6]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/year_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net top/clock_module/dcf_interpreter/year_temp_reg[7]_0 is a gated clock net sourced by a combinational pin top/clock_module/dcf_interpreter/year_reg[7]_LDC_i_1/O, cell top/clock_module/dcf_interpreter/year_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

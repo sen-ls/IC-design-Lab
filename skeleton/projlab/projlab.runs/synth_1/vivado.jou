@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jul 28 16:39:20 2023
+# Process ID: 633545
+# Current directory: /nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.runs/synth_1
+# Command line: vivado -log hardware.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hardware.tcl
+# Log file: /nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.runs/synth_1/hardware.vds
+# Journal file: /nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source hardware.tcl -notrace

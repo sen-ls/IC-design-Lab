@@ -1,0 +1,727 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jul 28 16:39:20 2023
+# Process ID: 633545
+# Current directory: /nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.runs/synth_1
+# Command line: vivado -log hardware.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hardware.tcl
+# Log file: /nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.runs/synth_1/hardware.vds
+# Journal file: /nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source hardware.tcl -notrace
+Command: synth_design -top hardware -part xc7z020clg484-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 633652 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1766.629 ; gain = 153.520 ; free physical = 21348 ; free virtual = 25681
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2489] overwriting existing secondary unit behavioral [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/imports/skeleton/dcf_interpreter.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'hardware' [/nas/ei/home/ge34gak/iclab/skeleton/hardware.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'clock_gen' [/nas/ei/home/ge34gak/iclab/skeleton/clock_gen.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clock_gen' (1#1) [/nas/ei/home/ge34gak/iclab/skeleton/clock_gen.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'dcf_gen' [/nas/ei/home/ge34gak/iclab/skeleton/dcf_gen.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'dcf_gen' (2#1) [/nas/ei/home/ge34gak/iclab/skeleton/dcf_gen.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'top' [/nas/ei/home/ge34gak/iclab/skeleton/top.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'key_control' [/nas/ei/home/ge34gak/iclab/skeleton/key_control.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'debounce' [/nas/ei/home/ge34gak/iclab/skeleton/debounce.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (3#1) [/nas/ei/home/ge34gak/iclab/skeleton/debounce.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'key_control' (4#1) [/nas/ei/home/ge34gak/iclab/skeleton/key_control.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'dcf_decode' [/nas/ei/home/ge34gak/iclab/skeleton/dcf_decode.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'dcf_decode' (5#1) [/nas/ei/home/ge34gak/iclab/skeleton/dcf_decode.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'clock_module' [/nas/ei/home/ge34gak/iclab/skeleton/clock_module.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'time_date' [/nas/ei/home/ge34gak/iclab/skeleton/time_date.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'time_date' (6#1) [/nas/ei/home/ge34gak/iclab/skeleton/time_date.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'synchronize' [/nas/ei/home/ge34gak/iclab/skeleton/synchronize.vhd:44]
+INFO: [Synth 8-226] default block is never used [/nas/ei/home/ge34gak/iclab/skeleton/synchronize.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'synchronize' (7#1) [/nas/ei/home/ge34gak/iclab/skeleton/synchronize.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'display_interpreter' [/nas/ei/home/ge34gak/iclab/skeleton/display_interpreter.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'display_interpreter' (8#1) [/nas/ei/home/ge34gak/iclab/skeleton/display_interpreter.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'display_controller' [/nas/ei/home/ge34gak/iclab/skeleton/display_controller.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'display_controller' (9#1) [/nas/ei/home/ge34gak/iclab/skeleton/display_controller.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'state_control' [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/new/state_control.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'state_control' (10#1) [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/new/state_control.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'dcf_interpreter' [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/imports/skeleton/dcf_interpreter.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element valid_reg was removed.  [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/imports/skeleton/dcf_interpreter.vhd:109]
+WARNING: [Synth 8-3936] Found unconnected internal register 'day_temp_reg' and it is trimmed from '8' to '6' bits. [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/imports/skeleton/dcf_interpreter.vhd:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'month_temp_reg' and it is trimmed from '8' to '5' bits. [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/imports/skeleton/dcf_interpreter.vhd:125]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hour_temp_reg' and it is trimmed from '8' to '6' bits. [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/imports/skeleton/dcf_interpreter.vhd:127]
+WARNING: [Synth 8-3936] Found unconnected internal register 'min_temp_reg' and it is trimmed from '8' to '7' bits. [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/imports/skeleton/dcf_interpreter.vhd:128]
+INFO: [Synth 8-256] done synthesizing module 'dcf_interpreter' (11#1) [/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.srcs/sources_1/imports/skeleton/dcf_interpreter.vhd:55]
+WARNING: [Synth 8-3848] Net led_alarm_act in module/entity clock_module does not have driver. [/nas/ei/home/ge34gak/iclab/skeleton/clock_module.vhd:50]
+WARNING: [Synth 8-3848] Net led_alarm_ring in module/entity clock_module does not have driver. [/nas/ei/home/ge34gak/iclab/skeleton/clock_module.vhd:51]
+WARNING: [Synth 8-3848] Net led_countdown_act in module/entity clock_module does not have driver. [/nas/ei/home/ge34gak/iclab/skeleton/clock_module.vhd:52]
+WARNING: [Synth 8-3848] Net led_countdown_ring in module/entity clock_module does not have driver. [/nas/ei/home/ge34gak/iclab/skeleton/clock_module.vhd:53]
+WARNING: [Synth 8-3848] Net led_switch_act in module/entity clock_module does not have driver. [/nas/ei/home/ge34gak/iclab/skeleton/clock_module.vhd:54]
+WARNING: [Synth 8-3848] Net led_switch_on in module/entity clock_module does not have driver. [/nas/ei/home/ge34gak/iclab/skeleton/clock_module.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'clock_module' (12#1) [/nas/ei/home/ge34gak/iclab/skeleton/clock_module.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'top' (13#1) [/nas/ei/home/ge34gak/iclab/skeleton/top.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'hardware' (14#1) [/nas/ei/home/ge34gak/iclab/skeleton/hardware.vhd:52]
+WARNING: [Synth 8-3331] design state_control has unconnected port clk
+WARNING: [Synth 8-3331] design state_control has unconnected port reset
+WARNING: [Synth 8-3331] design state_control has unconnected port en_10
+WARNING: [Synth 8-3331] design state_control has unconnected port mode_imp
+WARNING: [Synth 8-3331] design state_control has unconnected port minus_imp
+WARNING: [Synth 8-3331] design state_control has unconnected port plus_imp
+WARNING: [Synth 8-3331] design display_controller has unconnected port global_state[6]
+WARNING: [Synth 8-3331] design display_controller has unconnected port global_state[5]
+WARNING: [Synth 8-3331] design display_controller has unconnected port global_state[4]
+WARNING: [Synth 8-3331] design display_controller has unconnected port global_state[3]
+WARNING: [Synth 8-3331] design display_controller has unconnected port global_state[2]
+WARNING: [Synth 8-3331] design display_controller has unconnected port global_state[1]
+WARNING: [Synth 8-3331] design display_controller has unconnected port global_state[0]
+WARNING: [Synth 8-3331] design display_interpreter has unconnected port reset
+WARNING: [Synth 8-3331] design synchronize has unconnected port en_100
+WARNING: [Synth 8-3331] design clock_module has unconnected port led_alarm_act
+WARNING: [Synth 8-3331] design clock_module has unconnected port led_alarm_ring
+WARNING: [Synth 8-3331] design clock_module has unconnected port led_countdown_act
+WARNING: [Synth 8-3331] design clock_module has unconnected port led_countdown_ring
+WARNING: [Synth 8-3331] design clock_module has unconnected port led_switch_act
+WARNING: [Synth 8-3331] design clock_module has unconnected port led_switch_on
+WARNING: [Synth 8-3331] design clock_module has unconnected port en_1K
+WARNING: [Synth 8-3331] design clock_module has unconnected port key_action_imp
+WARNING: [Synth 8-3331] design clock_module has unconnected port key_action_long
+WARNING: [Synth 8-3331] design clock_module has unconnected port key_plus_minus
+WARNING: [Synth 8-3331] design clock_module has unconnected port key_enable
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[7]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[6]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[5]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[4]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[3]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1819.379 ; gain = 206.270 ; free physical = 21359 ; free virtual = 25693
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1828.285 ; gain = 215.176 ; free physical = 21359 ; free virtual = 25693
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1828.285 ; gain = 215.176 ; free physical = 21359 ; free virtual = 25693
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nas/ei/home/ge34gak/iclab/skeleton/zedboard_master.xdc]
+Finished Parsing XDC File [/nas/ei/home/ge34gak/iclab/skeleton/zedboard_master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nas/ei/home/ge34gak/iclab/skeleton/zedboard_master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hardware_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hardware_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2014.848 ; gain = 0.000 ; free physical = 21251 ; free virtual = 25585
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2014.848 ; gain = 0.000 ; free physical = 21251 ; free virtual = 25585
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21336 ; free virtual = 25670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21336 ; free virtual = 25670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21339 ; free virtual = 25673
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'synchronize'
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "line2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "number_to_char" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'display_controller'
+INFO: [Synth 8-5544] ROM "clk_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                               00 |                               00
+                       z |                               01 |                               01
+                      zo |                               10 |                               10
+                     zoz |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'synchronize'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   power |                             0000 |                             0000
+                    init |                             0001 |                             0001
+                     set |                             0010 |                             0010
+                   clear |                             0011 |                             0011
+                    mode |                             0100 |                             0100
+                 display |                             0101 |                             0101
+                    addr |                             0110 |                             0110
+                   write |                             0111 |                             0111
+                   nextc |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'display_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21326 ; free virtual = 25660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 11    
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 6     
+	  12 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	  12 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	  12 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	  12 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 3     
++---Registers : 
+	              320 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 9     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 37    
++---Muxes : 
+	   9 Input    320 Bit        Muxes := 2     
+	   3 Input    320 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 30    
+	   3 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+	   8 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 7     
+	   9 Input      8 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 18    
+	   2 Input      4 Bit        Muxes := 5     
+	   9 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	  40 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module hardware 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module clock_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 10    
+Module dcf_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  40 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module key_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module dcf_decode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 3     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module time_date 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 30    
+	   3 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module synchronize 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module display_interpreter 
+Detailed RTL Component Info : 
++---Registers : 
+	              320 Bit    Registers := 2     
++---Muxes : 
+	   9 Input    320 Bit        Muxes := 2     
+	   3 Input    320 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+	   8 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 17    
+	   9 Input      2 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module display_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   9 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   9 Input      8 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 8     
+Module dcf_interpreter 
+Detailed RTL Component Info : 
++---Adders : 
+	  12 Input      8 Bit       Adders := 1     
+	  12 Input      7 Bit       Adders := 1     
+	  12 Input      6 Bit       Adders := 2     
+	  12 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "line2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design hardware has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design hardware has port LED[2] driven by constant 0
+WARNING: [Synth 8-3331] design display_interpreter has unconnected port reset
+WARNING: [Synth 8-3331] design top has unconnected port led_alarm_act
+WARNING: [Synth 8-3331] design top has unconnected port led_alarm_ring
+WARNING: [Synth 8-3331] design top has unconnected port led_countdown_act
+WARNING: [Synth 8-3331] design top has unconnected port led_countdown_ring
+WARNING: [Synth 8-3331] design top has unconnected port led_switch_act
+WARNING: [Synth 8-3331] design top has unconnected port led_switch_on
+WARNING: [Synth 8-3331] design top has unconnected port en_1K
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[7]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[6]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[5]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[4]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[3]
+WARNING: [Synth 8-3331] design hardware has unconnected port SW[2]
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[313]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[305]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[297]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[289]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[281]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[273]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[265]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[257]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[249]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[241]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[233]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[225]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[217]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[209]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[201]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[193]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[185]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[177]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[169]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[161]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[153]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[145]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[137]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[129]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[121]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[113]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[105]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[97]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[89]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[81]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[73]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[65]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[57]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[49]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[41]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[33]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[25]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[17]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[9]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[1]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[314]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[306]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[298]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[290]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[282]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[274]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[266]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[258]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[250]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[242]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[234]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[226]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[218]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[210]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[202]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[194]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[186]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[178]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[170]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[162]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[154]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[146]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[138]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[130]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[122]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[114]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[106]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[98]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[90]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[82]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[74]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[66]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[58]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[50]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[42]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[34]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[26]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[18]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[10]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[2]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[315]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[307]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[299]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[291]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[283]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[275]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[267]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[259]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[251]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[243]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[235]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[227]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[219]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[211]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[203]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[195]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[187]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[179]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[171]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[319]'
+INFO: [Synth 8-3886] merging instance 'top/clock_module/display_interpreter/line1_reg[163]' (FDE) to 'top/clock_module/display_interpreter/line2_reg[317]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\top/clock_module/display_interpreter/line2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\top/clock_module/display_interpreter/line2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\top/clock_module/display_controller/lcd_rw_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21293 ; free virtual = 25632
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21173 ; free virtual = 25513
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21171 ; free virtual = 25510
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21170 ; free virtual = 25509
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21169 ; free virtual = 25509
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21169 ; free virtual = 25509
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21169 ; free virtual = 25509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21169 ; free virtual = 25509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21169 ; free virtual = 25509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21169 ; free virtual = 25509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |    10|
+|2     |CARRY4 |   240|
+|3     |LUT1   |    46|
+|4     |LUT2   |   601|
+|5     |LUT3   |   362|
+|6     |LUT4   |   100|
+|7     |LUT5   |   186|
+|8     |LUT6   |   436|
+|9     |MUXF7  |     6|
+|10    |FDCE   |   224|
+|11    |FDPE   |    40|
+|12    |FDRE   |   369|
+|13    |FDSE   |     8|
+|14    |LDC    |    36|
+|15    |IBUF   |     4|
+|16    |OBUF   |    19|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+--------------------+------+
+|      |Instance                  |Module              |Cells |
++------+--------------------------+--------------------+------+
+|1     |top                       |                    |  2687|
+|2     |  clock_gen               |clock_gen           |    67|
+|3     |  dcf_gen                 |dcf_gen             |    60|
+|4     |  top                     |top                 |  2318|
+|5     |    clock_module          |clock_module        |  2232|
+|6     |      dcf_interpreter     |dcf_interpreter     |   164|
+|7     |      display_controller  |display_controller  |   438|
+|8     |      display_interpreter |display_interpreter |    95|
+|9     |      synchronize         |synchronize         |    17|
+|10    |      time_date           |time_date           |  1431|
+|11    |    dcf_decode            |dcf_decode          |    86|
++------+--------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21169 ; free virtual = 25509
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2014.848 ; gain = 215.176 ; free physical = 21224 ; free virtual = 25564
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2014.848 ; gain = 401.738 ; free physical = 21239 ; free virtual = 25579
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 282 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2014.848 ; gain = 0.000 ; free physical = 21175 ; free virtual = 25515
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  LDC => LDCE: 36 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+169 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2014.848 ; gain = 632.547 ; free physical = 21270 ; free virtual = 25610
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2014.848 ; gain = 0.000 ; free physical = 21270 ; free virtual = 25610
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/nas/ei/home/ge34gak/iclab/skeleton/projlab/projlab.runs/synth_1/hardware.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hardware_utilization_synth.rpt -pb hardware_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 28 16:39:53 2023...

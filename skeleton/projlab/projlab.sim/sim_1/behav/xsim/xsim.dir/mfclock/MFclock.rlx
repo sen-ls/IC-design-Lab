@@ -1,0 +1,22 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/nas/ei/home/ge62pir/LabICDesign/skeleton/clock_gen.vhd,1555588359,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/hardware.vhd,,,clock_gen,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/clock_module.vhd,1690192843,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/top.vhd,,,clock_module,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/dcf_decode.vhd,1555588359,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/projlab/projlab.srcs/sources_1/new/dcf_tb.vhd;/nas/ei/home/ge62pir/LabICDesign/skeleton/top.vhd,,,dcf_decode,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/dcf_gen.vhd,1555588359,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/hardware.vhd;/nas/ei/home/ge62pir/LabICDesign/skeleton/projlab/projlab.srcs/sources_1/new/dcf_tb.vhd,,,dcf_gen,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/debounce.vhd,1555588359,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/key_control.vhd,,,debounce,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/display_controller.vhd,1690193861,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/clock_module.vhd,,,display_controller,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/display_decoder.vhd,1689356447,vhdl,,,,display_decoder,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/display_interpreter.vhd,1690194860,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/clock_module.vhd,,,display_interpreter,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/hardware.vhd,1688997168,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/tb.vhd,,,hardware,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/key_control.vhd,1555588359,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/top.vhd,,,key_control,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/projlab/projlab.srcs/sim_1/new/sync_tb.vhd,1690186245,vhdl,,,,sync_tb,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/projlab/projlab.srcs/sources_1/new/dcf_tb.vhd,1690277823,vhdl,,,,dcf_tb,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/projlab/projlab.srcs/sources_1/new/state_control.vhd,1690190197,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/clock_module.vhd,,,state_control,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/projlab/projlab.srcs/sources_1/new/synchronize.vhd,1690187594,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/clock_module.vhd,,,synchronize,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/projlab/projlab.srcs/sources_1/new/time_date.vhd,1690193765,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/clock_module.vhd,,,time_date,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/syncronize.vhd,1688398851,vhdl,,,,syncronize,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/tb.vhd,1689264462,vhdl,,,,tb,,,,,,,,
+/nas/ei/home/ge62pir/LabICDesign/skeleton/top.vhd,1555588359,vhdl,/nas/ei/home/ge62pir/LabICDesign/skeleton/hardware.vhd,,,top,,,,,,,,
